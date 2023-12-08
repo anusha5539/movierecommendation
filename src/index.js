@@ -1,17 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import '../src/index.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+  // <App />
+  <>
+    <div className="h-screen bg-primary">
+      <p className="text-4xl text-center text-secondary bg-primary font-heading ">Hello world</p>
+      <p className="font-subheading text-white text-4xl">This is subheading</p>
+      <p className="text-yellow-500 font-paragraph text-4xl">This is a simple text for movie recommendation system</p>
+
+    </div>
+
+  </>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
